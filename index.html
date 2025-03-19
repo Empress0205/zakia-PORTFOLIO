@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zakia Naswabu - Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- Add FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Vertical Navbar -->
+    <div class="navbar">
+        <a href="#introduction">Home</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contacts">Contacts</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Introduction Section -->
+        <section id="introduction" class="section">
+            <div class="profile-pic-container">
+                <img src="images/zakia.jpeg" alt="Zakia Naswabu">
+            </div>
+            <div class="introduction-content">
+                <h2 class="section-title">Welcome to My Portfolio</h2>
+                <p>Hello! I'm <span class="highlight">Zakia Naswabu</span>, a second-year student at Ardhi University pursuing a Bachelor of Information System Management. I am passionate about web development and have a strong foundation in <span class="highlight">Java</span> and <span class="highlight">Python</span>.</p>
+                <p>As a dedicated website developer, I thrive on creating dynamic and user-friendly applications that address real-world challenges. My journey in both front-end and back-end development has equipped me with the skills to build comprehensive solutions.</p>
+                <p>Feel free to explore my work, achievements, and projects. I am always eager to learn new technologies and collaborate on exciting projects. Let's connect and create something amazing together!</p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card" onclick="toggleDescription(this)">
+                    <div class="skill-icon"><i class="fab fa-java"></i></div>
+                    <div class="skill-title">Java</div>
+                    <div class="skill-description">
+                        I have experience building desktop applications and Android apps using Java. I am proficient in object-oriented programming and have worked on projects like a student management system.
+                    </div>
+                </div>
+                <div class="skill-card" onclick="toggleDescription(this)">
+                    <div class="skill-icon"><i class="fab fa-python"></i></div>
+                    <div class="skill-title">Python</div>
+                    <div class="skill-description">
+                        I use Python for data analysis, automation, and backend development. I have worked with libraries like Pandas, Tkinter, Django, and Flask to build efficient and scalable solutions.
+                    </div>
+                </div>
+                <div class="skill-card" onclick="toggleDescription(this)">
+                    <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                    <div class="skill-title">HTML & CSS</div>
+                    <div class="skill-description">
+                        I specialize in creating responsive and visually appealing websites. I have built several projects, including personal portfolios and business websites, using modern HTML5 and CSS3 techniques.
+                    </div>
+                </div>
+                <div class="skill-card" onclick="toggleDescription(this)">
+                    <div class="skill-icon"><i class="fas fa-database"></i></div>
+                    <div class="skill-title">SQL</div>
+                    <div class="skill-description">
+                        I am skilled in database design and management. I have used SQL to create and query relational databases for various applications, ensuring data integrity and performance.
+                    </div>
+                </div>
+                <div class="skill-card" onclick="toggleDescription(this)">
+                    <div class="skill-icon"><i class="fab fa-github"></i></div>
+                    <div class="skill-title">Git & GitHub</div>
+                    <div class="skill-description">
+                        I use Git for version control and collaboration. I have experience managing repositories, branching, and merging code, as well as contributing to open-source projects on GitHub.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-icon"><i class="fas fa-calendar-alt"></i></div>
+                    <div class="project-title">Events Management System</div>
+                    <div class="project-description">
+                        A web-based system for managing events, including scheduling, attendee registration, and notifications. Built with Python (Flask) and SQLite.
+                    </div>
+                    <a href="https://github.com/Empress0205/EVENTS-MANAGEMENT_WEBSITE" class="github-link" target="_blank">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon"><i class="fas fa-user"></i></div>
+                    <div class="project-title">Portfolio Website</div>
+                    <div class="project-description">
+                        A personal portfolio website showcasing my skills, projects, and achievements. Built with HTML, CSS, and JavaScript.
+                    </div>
+                    <a href="https://github.com/yourusername/portfolio-website" class="github-link" target="_blank">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon"><i class="fas fa-wallet"></i></div>
+                    <div class="project-title">Budget Tracker</div>
+                    <div class="project-description">
+                        A simple budget tracking application to manage income and expenses. Built with Django and a command-line interface.
+                    </div>
+                    <a href="https://github.com/Empress0205/PERSONAL_BUDGET_TRACKER" class="github-link" target="_blank">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements" class="section">
+            <h2 class="section-title">My Achievements</h2>
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="achievement-icon"><i class="fas fa-laptop-code"></i></div>
+                    <div class="achievement-title">Built a Personal Portfolio Website</div>
+                    <div class="achievement-description">
+                        Designed and developed a responsive portfolio website from scratch using HTML, CSS, and JavaScript.
+                    </div>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon"><i class="fas fa-book"></i></div>
+                    <div class="achievement-title">Completed Python Programming Course</div>
+                    <div class="achievement-description">
+                        Finished a comprehensive Python course on Coursera, covering fundamentals and advanced topics.
+                    </div>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon"><i class="fas fa-users"></i></div>
+                    <div class="achievement-title">Collaborated on a Group Project</div>
+                    <div class="achievement-description">
+                        Worked with a team of 5 to develop a student management system for a university course.
+                    </div>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon"><i class="fas fa-lightbulb"></i></div>
+                    <div class="achievement-title">Self-Taught Web Development</div>
+                    <div class="achievement-description">
+                        Learned HTML, CSS, and JavaScript independently to build interactive and responsive websites.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+ <!-- Contacts Section -->
+ <section id="contacts" class="section">
+    <h2 class="section-title">Contacts</h2>
+    <p>If you'd like to get in touch with me, feel free to reach out via the following methods:</p>
+    <ul>
+        <li><strong>Email:</strong> <a href="mailto:zakianaswabu@gmail.com" class="email-link">zakianaswabu@gmail.com</a></li>
+        <li><strong>Phone:</strong> +255 757 697 765</li>
+        <li><strong>GitHub:</strong> <a href="https://github.com/Empress0205" target="_blank">Empress0205</a></li>
+        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/zakia-naswabu" target="_blank">Zakia Naswabu</a></li>
+    </ul>
+</section>
+<footer class="portfolio-footer">
+    <div class="footer-content">
+        <p>&copy; 2025 ZakiaNaswabu. All rights reserved.</p>
+
+    </div>
+</footer>
+</div>
+
+
+<script>
+function toggleDescription(card) {
+    card.classList.toggle("active");
+}
+</script>
+
+</body>
+</html>
