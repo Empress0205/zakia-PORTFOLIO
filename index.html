@@ -11,11 +11,23 @@
 <body>
     <!-- Vertical Navbar -->
     <div class="navbar" id="navbar">
-        <a href="#introduction">Home</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#achievements">Achievements</a>
-        <a href="#contacts">Contacts</a>
+        <div class="navbar-brand">
+            <span>Zakia's Portfolio</span>
+            <i class="fas fa-bars" onclick="toggleNavbar()"></i>
+            </div>
+        <div class="navbar-links" id="navbar-links">
+            <ul>
+                <a href="#introduction">Home</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#achievements">Achievements</a>
+                <a href="#contacts">Contacts</a>
+            </ul>
+            
+           
+            
+
+        </div>
     </div>
 
     <!-- Main Content -->
@@ -158,13 +170,18 @@
                 <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/zakia-naswabu" target="_blank">Zakia Naswabu</a></li>
             </ul>
         </section>
+        </div>
+
 
         <footer class="portfolio-footer">
             <div class="footer-content">
                 <p>&copy; 2025 ZakiaNaswabu. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="https://github.com/Empress0205" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/zakia-naswabu" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:zakianaswabu@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
             </div>
-        </footer>
-    </div>
 
     <script>
         function toggleDescription(card) {
@@ -173,9 +190,12 @@
 
         // Toggle navbar for mobile view
         function toggleNavbar() {
-            const navbar = document.getElementById("navbar");
-            navbar.classList.toggle("responsive");
+            const navbarLinks = document.getElementById("navbar-links");
+            navbarLinks.classList.toggle("active");
         }
+
+      
+;
     </script>
 </body>
 </html>
